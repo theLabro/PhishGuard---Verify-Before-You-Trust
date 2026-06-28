@@ -8,7 +8,6 @@
 [![Status](https://img.shields.io/badge/Status-Live-22C55E?style=for-the-badge)](#)
 [![Repo](https://img.shields.io/badge/Source_Code-Private-red?style=for-the-badge)](#-source-code-notice)
 
-🌐 **Live Demo:** [https://phishguard.qzz.io](https://phishguard.qzz.io)
 
 </div>
 
@@ -83,22 +82,22 @@ Rather than overwhelming users with technical jargon, PhishGuard translates mult
 ## Screenshots
 
 ### Home Page
-<img src="screenshots/home.png" alt="Home Page" width="900" />
+<img src="home.png" alt="Home Page" width="900" />
 
 ### URL Scanner
-<img src="screenshots/scanner.png" alt="URL Scanner" width="900" />
+<img src="scanner.png" alt="URL Scanner" width="900" />
 
 ### Scan Result
-<img src="screenshots/scan-result.png" alt="Scan Result" width="900" />
+<img src="scan-result.png" alt="Scan Result" width="900" />
 
 ### Dashboard
-<img src="screenshots/dashboard.png" alt="Dashboard" width="900" />
+<img src="dashboard.png" alt="Dashboard" width="900" />
 
 ### Login
-<img src="screenshots/login.png" alt="Login" width="900" />
+<img src="login.png" alt="Login" width="900" />
 
 ### Mobile View
-<img src="screenshots/mobile.png" alt="Mobile View" width="360" />
+<img src="mobile.png" alt="Mobile View" width="360" />
 
 ---
 
