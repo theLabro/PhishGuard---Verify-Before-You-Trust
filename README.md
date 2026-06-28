@@ -1,159 +1,123 @@
-<!-- Header -->
 <div align="center">
-  <br/>
-  <img src="https://phishguard.qzz.io/assets/images/favicon.png" width="90" alt="PhishGuard" />
-  <br/><br/>
+  <img src="screenshots/banner.png" width="100%" alt="PhishGuard" />
+</div>
 
-  <h1>⚡ PhishGuard</h1>
+<br/>
 
-  <p><strong>Verify Before You Trust</strong></p>
-  <p>AI-powered phishing & malicious URL detection — real-time, multi-layer, and built for everyone.</p>
+<div align="center">
 
-  <br/>
-
-  <a href="https://phishguard.qzz.io">
-    <img src="https://img.shields.io/badge/%F0%9F%8C%90%20Live%20Demo-phishguard.qzz.io-22C55E?style=for-the-badge&labelColor=0B0F12" alt="Live Demo"/>
-  </a>
+  <a href="https://phishguard.qzz.io"><img src="https://img.shields.io/badge/🌐  Live Demo-phishguard.qzz.io-22C55E?style=for-the-badge&labelColor=0d1117" /></a>
   &nbsp;
-  <img src="https://img.shields.io/badge/Status-Live%20%26%20Active-22C55E?style=for-the-badge&labelColor=0B0F12" alt="Status"/>
+  <img src="https://img.shields.io/badge/Status-Live & Active-22C55E?style=for-the-badge&labelColor=0d1117" />
   &nbsp;
-  <img src="https://img.shields.io/badge/Source_Code-Private-ff4d4d?style=for-the-badge&labelColor=0B0F12" alt="Private"/>
+  <img src="https://img.shields.io/badge/Source Code-Private-ff4d4d?style=for-the-badge&labelColor=0d1117" />
   &nbsp;
-  <img src="https://img.shields.io/badge/ML_Model-450K%20URLs-8B5CF6?style=for-the-badge&labelColor=0B0F12" alt="ML Model"/>
+  <img src="https://img.shields.io/badge/ML Dataset-450K URLs-8B5CF6?style=for-the-badge&labelColor=0d1117" />
 
   <br/><br/>
 
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white"/>
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white"/>
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"/>
-  <img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black"/>
-  <img src="https://img.shields.io/badge/Netlify-00C7B7?style=flat-square&logo=netlify&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white"/>
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
+  <img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black" />
+  <img src="https://img.shields.io/badge/Netlify-00C7B7?style=flat-square&logo=netlify&logoColor=white" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white" />
+  <img src="https://img.shields.io/badge/Chrome Extension-4285F4?style=flat-square&logo=googlechrome&logoColor=white" />
 
-  <br/><br/>
+</div>
+
+<br/>
+
+<div align="center">
+  <sup>🔒 This is a <strong>public showcase only</strong> — source code, Firebase config, detection logic, and backend implementation are maintained in a private repository.</sup>
 </div>
 
 ---
 
+## &nbsp;What is PhishGuard?
+
+PhishGuard is a cybersecurity web application that tells you whether a URL is safe to visit — before you click it. Paste any link and get an instant, human-readable security report: a safety score, a risk classification, and a clear breakdown of exactly what looks suspicious.
+
+No installation. No technical knowledge required.
+
+&nbsp;🌐 &nbsp;[**Try it live at phishguard.qzz.io**](https://phishguard.qzz.io)
+
+---
+
+## &nbsp;Detection Engine
+
+Every URL is analyzed through **4 independent layers** — no single point of failure.
+
+<br/>
+
 <div align="center">
 
-> 🔒 **This is a public showcase repository.** &nbsp;Source code, backend logic, Firebase config, and security rules are maintained privately.
+| &nbsp; | Layer | Method | What it catches |
+|:------:|:------|:-------|:----------------|
+| `01` | **Blocklist** | Dataset lookup | Known phishing domains — instant, zero latency |
+| `02` | **ML Model** | scikit-learn classifier | Novel phishing patterns via 21 lexical URL features |
+| `03` | **Heuristics** | Rule engine | Suspicious TLDs · brand impersonation · lookalike domains · IP hosts · phishing keywords |
+| `04` | **VirusTotal** | API cross-check | Validated against 70+ live security engines |
+
+</div>
+
+<br/>
+
+The final score (`0 – 100`) maps to four classifications:
+
+<div align="center">
+
+| Score | Classification | Risk |
+|:-----:|:--------------|:-----|
+| 80 – 100 | 🟢 &nbsp;**Safe** | Low |
+| 58 – 79 &nbsp; | 🟡 &nbsp;**Suspicious** | Medium |
+| 32 – 57 &nbsp; | 🟠 &nbsp;**Phishing** | High |
+| 0 – 31 &nbsp;&nbsp; | 🔴 &nbsp;**Malicious** | Critical |
 
 </div>
 
 ---
 
-## 📸 Preview
-
-<div align="center">
-
-### Home
-<img src="screenshots/home.png" width="900" alt="PhishGuard Home"/>
+## &nbsp;Features
 
 <br/>
-
-### URL Scanner
-<img src="screenshots/scanner.png" width="900" alt="URL Scanner"/>
-
-<br/>
-
-### Scan Result
-<img src="screenshots/scan-result.png" width="900" alt="Scan Result"/>
-
-<br/>
-
-### Dashboard
-<img src="screenshots/dashboard.png" width="900" alt="Dashboard"/>
-
-<br/>
-
-### Authentication
-<img src="screenshots/login.png" width="900" alt="Login"/>
-
-<br/>
-
-### Mobile View
-<img src="screenshots/mobile.png" width="360" alt="Mobile View"/>
-
-</div>
-
----
-
-## 🧠 What is PhishGuard?
-
-PhishGuard is a cybersecurity web application that helps users evaluate the safety of any URL before visiting it. Instead of drowning users in raw technical data, it translates dozens of security signals into a single, clean visual report — a score, a status, and a clear breakdown of exactly what looks suspicious and why.
-
-No installation. No technical knowledge required. Just paste a URL and get an answer.
-
----
-
-## 🛡️ Detection Engine — 4 Layers Deep
-
-PhishGuard doesn't rely on a single method. Every scan passes through four independent layers:
-
-```
- ┌─────────────────────────────────────────────────────────────────┐
- │                                                                 │
- │   Layer 1  ░  Blocklist         Known phishing domains          │
- │               ──────────────    Instant match, zero latency     │
- │                    │                                            │
- │   Layer 2  ░  ML Model          Trained on 450,000 URLs         │
- │               ──────────────    21 lexical features per URL     │
- │                    │                                            │
- │   Layer 3  ░  Heuristics        TLDs · Brand impersonation      │
- │               ──────────────    Lookalikes · IP hosts · Keywords│
- │                    │                                            │
- │   Layer 4  ░  VirusTotal API    70+ security engines            │
- │               ──────────────    Final authoritative override    │
- │                                                                 │
- │              ↓  Score  ·  Status  ·  Threat Flags               │
- └─────────────────────────────────────────────────────────────────┘
-```
-
-| Layer | Method | Catches |
-|:-----:|--------|---------|
-| 1 | **Blocklist** | Known phishing domains from a curated dataset |
-| 2 | **ML Model** | Novel patterns not yet in any blocklist |
-| 3 | **Heuristics** | Suspicious TLDs, lookalike domains, phishing keywords, brand impersonation, IP hosts |
-| 4 | **VirusTotal** | Cross-validated against 70+ live security engines |
-
----
-
-## ✨ Features
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-**🔍 URL Scanner**
-- Real-time phishing detection
-- Safety score `0 – 100`
-- `Safe` / `Suspicious` / `Phishing` / `Malicious` classification
-- Detailed per-flag threat breakdown
-- No login required
+### 🔍 &nbsp;URL Scanner
+- Real-time threat detection for any URL
+- Safety score with color-coded risk level
+- Per-flag threat breakdown — tells you *why*
+- No account required
 
-**📊 Dashboard**
-- 7-day activity line chart
+<br/>
+
+### 📊 &nbsp;Dashboard
+- 7-day scan activity chart
 - Threat distribution pie chart
-- Animated metric cards
-- Searchable scan history table
-- CSV export for reports
+- Animated live metric cards
+- Searchable & filterable history table
+- One-click CSV export
 
 </td>
 <td width="50%" valign="top">
 
-**🧩 Browser Extension**
-- Auto-scans every page you visit
-- Color-coded badge — 🟢 Safe · 🟡 Suspicious · 🔴 Malicious
-- Desktop threat notifications
-- iOS-style liquid glass popup UI
+### 🧩 &nbsp;Browser Extension
+- Auto-scans every URL you visit
+- Badge updates instantly — 🟢 🟡 🔴
+- Desktop notifications for threats
+- Liquid glass popup UI
 - Chrome · Edge · Brave · Opera
 
-**🔐 Authentication**
-- Firebase Auth — Google Sign-In + Email
-- Firestore — scan history syncs across devices
-- Graceful fallback to localStorage
+<br/>
+
+### 🔐 &nbsp;Authentication
+- Google Sign-In + Email/Password
+- Scan history synced to Firestore
+- Works offline with localStorage fallback
 
 </td>
 </tr>
@@ -161,134 +125,144 @@ PhishGuard doesn't rely on a single method. Every scan passes through four indep
 
 ---
 
-## 🏗️ Architecture
+## &nbsp;Screenshots
+
+<br/>
+
+<div align="center">
+
+**URL Scanner**
+<img src="screenshots/scanner.png" width="900" alt="URL Scanner" />
+
+<br/><br/>
+
+**Scan Result**
+<img src="screenshots/scan-result.png" width="900" alt="Scan Result" />
+
+<br/><br/>
+
+**Dashboard**
+<img src="screenshots/dashboard.png" width="900" alt="Dashboard" />
+
+<br/><br/>
+
+**Authentication**
+<img src="screenshots/login.png" width="900" alt="Login" />
+
+<br/><br/>
+
+**Mobile**
+<img src="screenshots/mobile.png" width="360" alt="Mobile View" />
+
+</div>
+
+---
+
+## &nbsp;Architecture
 
 ```
-┌──────────────────────────────────────────────────────────────────┐
-│                         User Interfaces                          │
-│                                                                  │
-│     ┌─────────────────────────┐   ┌──────────────────────────┐  │
-│     │      Web App (SPA)      │   │    Browser Extension     │  │
-│     │   phishguard.qzz.io     │   │   Manifest V3 · MV3      │  │
-│     │  HTML · CSS · Vanilla JS│   │  Chrome · Edge · Brave   │  │
-│     └────────────┬────────────┘   └─────────────┬────────────┘  │
-└──────────────────┼──────────────────────────────┼───────────────┘
-                   │                              │
-                   ▼                              ▼
-┌──────────────────────────────────────────────────────────────────┐
-│                  Netlify Serverless Function                      │
-│                         /api/scan                                │
-│                                                                  │
-│    Blocklist  →  ML Model  →  Heuristics  →  VirusTotal API      │
-│                                                                  │
-│          Returns: score · status · flags · domain info           │
-└───────────────────────────┬──────────────────────────────────────┘
-                            │
-              ┌─────────────┴──────────────┐
-              ▼                            ▼
-┌─────────────────────┐      ┌──────────────────────────────┐
-│   Firebase Auth     │      │      Cloud Firestore          │
-│   Google + Email    │      │   users/{uid}/scans           │
-└─────────────────────┘      └──────────────────────────────┘
+╔══════════════════════════════════════════════════════════════════╗
+║                        User Interfaces                          ║
+║                                                                  ║
+║   ┌──────────────────────────┐    ┌───────────────────────────┐ ║
+║   │      Web App  (SPA)      │    │    Browser Extension      │ ║
+║   │   phishguard.qzz.io      │    │    Manifest V3            │ ║
+║   │   HTML · CSS · JS        │    │    Chrome · Edge · Brave  │ ║
+║   └─────────────┬────────────┘    └──────────────┬────────────┘ ║
+╚═════════════════╪═══════════════════════════════╪══════════════╝
+                  └──────────────┬────────────────┘
+                                 ▼
+╔══════════════════════════════════════════════════════════════════╗
+║               Netlify Serverless Function  /api/scan            ║
+║                                                                  ║
+║   [Blocklist]──▶[ML Model]──▶[Heuristics]──▶[VirusTotal API]   ║
+║                                                                  ║
+║              score · status · flags · domain info               ║
+╚═══════════════════════════════╤══════════════════════════════════╝
+                                │
+                ┌───────────────┴────────────────┐
+                ▼                                ▼
+   ┌────────────────────────┐      ┌─────────────────────────────┐
+   │    Firebase Auth       │      │      Cloud Firestore         │
+   │    Google · Email      │      │      users/{uid}/scans       │
+   └────────────────────────┘      └─────────────────────────────┘
 ```
 
 ---
 
-## 🛠️ Tech Stack
+## &nbsp;Tech Stack
 
-<table>
-<tr>
-<th>Layer</th>
-<th>Technology</th>
-<th>Purpose</th>
-</tr>
-<tr>
-<td rowspan="3"><strong>Frontend</strong></td>
-<td>HTML5 · CSS3</td>
-<td>Semantic markup, glassmorphism design</td>
-</tr>
-<tr>
-<td>Vanilla JavaScript (ES6+)</td>
-<td>SPA routing, Canvas charts, animations</td>
-</tr>
-<tr>
-<td>History API</td>
-<td>Back-button support, clean URLs</td>
-</tr>
-<tr>
-<td rowspan="3"><strong>Backend</strong></td>
-<td>Netlify Functions</td>
-<td>Serverless scan API</td>
-</tr>
-<tr>
-<td>VirusTotal API</td>
-<td>70+ AV engine cross-validation</td>
-</tr>
-<tr>
-<td>Firebase (Auth + Firestore)</td>
-<td>Authentication & cloud storage</td>
-</tr>
-<tr>
-<td rowspan="2"><strong>ML</strong></td>
-<td>Python · scikit-learn</td>
-<td>Model training pipeline</td>
-</tr>
-<tr>
-<td>450,000-URL dataset</td>
-<td>21 lexical features · joblib serving</td>
-</tr>
-<tr>
-<td rowspan="2"><strong>Extension</strong></td>
-<td>Chrome Manifest V3</td>
-<td>Background monitoring, badge updates</td>
-</tr>
-<tr>
-<td>Chrome Storage · Notifications API</td>
-<td>Local history, real-time alerts</td>
-</tr>
-</table>
+<br/>
+
+<div align="center">
+
+| Layer | Technology | Role |
+|:------|:-----------|:-----|
+| **Frontend** | HTML5 · CSS3 · Vanilla JS (ES6+) | SPA, animations, Canvas charts |
+| **Routing** | History API | Clean URLs, back-button support |
+| **Backend** | Netlify Serverless Functions | Scan API endpoint |
+| **Threat Intel** | VirusTotal API | 70+ AV engine cross-validation |
+| **Auth** | Firebase Authentication | Google Sign-In + Email/Password |
+| **Database** | Cloud Firestore | Scan history, user data |
+| **ML Training** | Python · scikit-learn · joblib | 450K-URL model, 21 features |
+| **Extension** | Chrome Manifest V3 | Background monitoring, alerts |
+
+</div>
 
 ---
 
-## 🔭 Roadmap
+## &nbsp;Roadmap
 
-- [x] URL safety scanner
+<br/>
+
+**Shipped**
+
 - [x] 4-layer detection engine
-- [x] ML model (450K dataset)
-- [x] User dashboard with charts
-- [x] Firebase authentication
-- [x] Scan history & CSV export
-- [x] Browser extension (MV3)
+- [x] ML model trained on 450K URLs
+- [x] Real-time URL scanner
+- [x] User dashboard with interactive charts
+- [x] Firebase auth & Firestore sync
+- [x] CSV export
+- [x] Browser extension (Manifest V3)
+
+**Upcoming**
+
 - [ ] Email phishing scanner
 - [ ] QR code safety checker
 - [ ] SSL certificate deep inspection
 - [ ] WHOIS & domain age analysis
 - [ ] Password leak detection
-- [ ] Threat intelligence integration
+- [ ] Threat intelligence feed integration
 - [ ] Mobile app
 
 ---
 
-## ⚠️ Disclaimer
+## &nbsp;Disclaimer
 
-PhishGuard is developed for educational, research, and cybersecurity awareness purposes. Security reports are informational and should not replace comprehensive professional security assessments.
+PhishGuard is developed for educational, research, and cybersecurity awareness purposes. Security reports generated by the application are informational and should not replace comprehensive professional security assessments.
+
+---
+
+## &nbsp;Author
+
+Built by **Rishipratim Karmakar**. Open to discussions, collaboration, and feedback.
+
+<br/>
 
 ---
 
-## 👤 Author
-
-**Rishipratim Karmakar**
-
-Open to discussions, collaboration, and feedback.
-
----
+<br/>
 
 <div align="center">
-  <br/>
+
   <a href="https://phishguard.qzz.io">
-    <img src="https://img.shields.io/badge/%F0%9F%8C%90%20Try%20PhishGuard%20Live-phishguard.qzz.io-22C55E?style=for-the-badge&labelColor=0B0F12" alt="Live Demo"/>
+    <img src="https://img.shields.io/badge/🌐  Try PhishGuard Live-phishguard.qzz.io-22C55E?style=for-the-badge&labelColor=0d1117" />
   </a>
+
   <br/><br/>
-  <sub>⭐ Star this repo if you found it useful</sub>
+
+  <sub>⭐ &nbsp;If you found this project useful, consider starring the repository</sub>
+
   <br/><br/>
+
 </div>
