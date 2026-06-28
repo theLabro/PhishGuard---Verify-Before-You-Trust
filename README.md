@@ -49,32 +49,32 @@
 <div align="center">
 
 ### Home
-<img src="home.png" width="900" alt="PhishGuard Home"/>
+<img src="screenshots/home.png" width="900" alt="PhishGuard Home"/>
 
 <br/>
 
 ### URL Scanner
-<img src="scanner.png" width="900" alt="URL Scanner"/>
+<img src="screenshots/scanner.png" width="900" alt="URL Scanner"/>
 
 <br/>
 
 ### Scan Result
-<img src="scan-result.png" width="900" alt="Scan Result"/>
+<img src="screenshots/scan-result.png" width="900" alt="Scan Result"/>
 
 <br/>
 
 ### Dashboard
-<img src="dashboard.png" width="900" alt="Dashboard"/>
+<img src="screenshots/dashboard.png" width="900" alt="Dashboard"/>
 
 <br/>
 
 ### Authentication
-<img src="login.png" width="900" alt="Login"/>
+<img src="screenshots/login.png" width="900" alt="Login"/>
 
 <br/>
 
 ### Mobile View
-<img src="mobile.png" width="360" alt="Mobile View"/>
+<img src="screenshots/mobile.png" width="360" alt="Mobile View"/>
 
 </div>
 
