@@ -151,11 +151,6 @@ The final score (`0 – 100`) maps to four classifications:
 
 <br/><br/>
 
-**Mobile**
-<img src="screenshots/mobile.png" width="360" alt="Mobile View" />
-
-</div>
-
 ---
 
 ## &nbsp;Architecture
